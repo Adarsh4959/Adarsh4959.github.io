@@ -176,10 +176,11 @@ body {
 }
 
 /* Footer Styles */
-footer.bg-body-tertiary {
-  background-color: #ffffff;
+footer {
+  background-color: #ffffff; /* White background for the footer */
   width: 100%;
-  margin-top: 100px; /* Push the footer to the bottom */
+  position: relative; /* Changed from fixed to relative */
+  margin-top: 50px; /* Optional: Adds some space between the footer and content above */
 }
 
 footer.text-center .btn-floating {
@@ -194,7 +195,6 @@ footer.text-center .btn-floating:hover {
 
 footer .container {
   padding: 1rem;
-  margin-top: 10px;
 }
 
 footer .p-3 {
@@ -202,10 +202,205 @@ footer .p-3 {
 }
 
 footer .text-body {
-  color: #000;
+  color: #000; /* Black color for the footer text */
   text-decoration: none;
 }
 
 footer .text-body:hover {
   text-decoration: underline;
+}
+
+
+/* Skills Section */
+.skills-section {
+  padding: 2rem 0;
+  background-color: #f8f9fa; /* Light grey background */
+  text-align: center;
+}
+
+.skills-heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  gap: 20px; /* Add some space between skill boxes */
+  justify-content: center; /* Center the skill boxes */
+}
+
+.skill-box {
+  flex: 0 1 calc(25% - 20px); /* Four items per row */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.skill-image {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.skill-description {
+  font-size: 14px;
+  color: #333;
+}
+
+.skill-box:hover {
+  transform: translateY(-5px);
+}
+
+.experience-section {
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.experience-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 60px; /* Space for the company logo */
+  border-left: 2px solid #000; /* Black line */
+  max-width: 800px; /* Center and limit the width of the timeline */
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 60px; /* Space for the company logo */
+  display: flex;
+  align-items: center; /* Align items to the center */
+}
+
+.timeline-logo {
+  position: absolute;
+  left: -85px; /* Align the logo with the line */
+  width: 50px; /* Adjust size of the logo */
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff; /* Optional: background color for the logo */
+  border: 2px solid #000; /* Optional: border color for the logo */
+  object-fit: cover; /* Ensure logo fits within the circle */
+}
+
+.timeline-content {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: calc(100% - 60px); /* Adjust width considering logo space */
+  margin-left: 60px; /* Space for the logo */
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.timeline-content h4 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 50px; /* Reduce space for the company logo */
+  }
+
+  .timeline-item {
+    padding-left: 50px; /* Reduce space for the company logo */
+  }
+
+  .timeline-logo {
+    left: -70px; /* Adjust logo position */
+    width: 40px;
+    height: 40px;
+  }
+
+  .timeline-content {
+    width: calc(100% - 50px); /* Adjust width for smaller screens */
+    margin-left: 50px; /* Reduce space for the logo */
+  }
+}
+
+@media (max-width: 425px) {
+  .timeline {
+    padding-left: 40px; /* Further reduce space for the company logo */
+  }
+
+  .timeline-item {
+    padding-left: 40px; /* Further reduce space for the company logo */
+  }
+
+  .timeline-logo {
+    left: -50px; /* Adjust logo position */
+    width: 35px;
+    height: 35px;
+  }
+
+  .timeline-content {
+    width: calc(100% - 40px); /* Adjust width for smaller screens */
+    margin-left: 40px; /* Further reduce space for the logo */
+  }
+}
+
+@media (max-width: 375px) {
+  .timeline {
+    padding-left: 30px; /* Further reduce space for the company logo */
+  }
+
+  .timeline-item {
+    padding-left: 30px; /* Further reduce space for the company logo */
+  }
+
+  .timeline-logo {
+    left: -40px; /* Adjust logo position */
+    width: 30px;
+    height: 30px;
+  }
+
+  .timeline-content {
+    width: calc(100% - 30px); /* Adjust width for smaller screens */
+    margin-left: 30px; /* Further reduce space for the logo */
+  }
+}
+
+@media (max-width: 320px) {
+  .timeline {
+    padding-left: 20px; /* Further reduce space for the company logo */
+  }
+
+  .timeline-item {
+    padding-left: 20px; /* Further reduce space for the company logo */
+  }
+
+  .timeline-logo {
+    left: 18; /* Adjust logo position */
+    width: 25px;
+    height: 25px;
+  }
+
+  .timeline-content {
+    width: calc(100% - 20px); /* Adjust width for smaller screens */
+    margin-left: 20px; /* Further reduce space for the logo */
+  }
 }

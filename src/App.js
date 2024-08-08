@@ -4,14 +4,17 @@ import Header from './components/Header'; // Ensure this path is correct
 import './App.css'; // Import your consolidated styles
 import About from './components/About';
 import Footer from './components/Footer';
+import Skill from './components/Skill';
+import Experience from './components/Experience';
 import logo from './logo.png';
-
 
 function App() {
   return (
     <div className="App">
       <Header />
       <About />
+      <Skill />
+      <Experience />
       <Footer />
       <main>
         {/* <p>

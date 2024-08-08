@@ -4,7 +4,7 @@ import '../App.css'; // Import the consolidated CSS file
 const Footer = () => {
   return (
     <footer className="footer bg-body-tertiary text-center">
-      <div className="container p-4 pb-0">
+      <div className="footer-container p-4 pb-0">
         <section className="mb-4">
           <a className="m-1" href="https://wa.me/919562856710" role="button" target="_blank" rel="noopener noreferrer">
             <img src="/whatsapp.png" alt="WhatsApp" className="social-icon" />
