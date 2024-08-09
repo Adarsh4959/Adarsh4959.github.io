@@ -1,12 +1,11 @@
-// src/components/Header.js
 import React from 'react';
 import '../App.css'; // Import the consolidated CSS file
+
 const Header = () => {
   return (
-  <section className='nav-list'>
-    <header className="bg-light py-3">
-      <nav className="container navbar navbar-expand-lg navbar-light">
-        <a className="navbar-brand" href="#">My Portfolio</a>
+    <header className="custom-header py-3">
+      <nav className="container navbar navbar-expand-lg">
+        <a className="navbar-brand" href="#">Adarsh M Nair</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -15,9 +14,6 @@ const Header = () => {
             <li className="nav-item">
               <a className="nav-link" href="#about">About</a>
             </li>
-            {/* <li className="nav-item">
-              <a className="nav-link" href="#projects">Projects</a>
-            </li> */}
             <li className="nav-item">
               <a className="nav-link" href="#skills">Skills</a>
             </li>
@@ -31,7 +27,6 @@ const Header = () => {
         </div>
       </nav>
     </header>
-  </section>
   );
 };
 
