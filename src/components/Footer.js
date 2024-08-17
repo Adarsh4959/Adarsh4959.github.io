@@ -3,7 +3,7 @@ import '../App.css'; // Import the consolidated CSS file
 
 const Footer = () => {
   return (
-    <footer className="footer bg-body-tertiary text-center">
+    <footer className="footer">
       <div className="footer-container p-4 pb-0">
         <section className="mb-4">
           <a className="m-1" href="https://wa.me/919562856710" role="button" target="_blank" rel="noopener noreferrer">
@@ -30,7 +30,9 @@ const Footer = () => {
 
       <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
         © 2024 Copyright:
-        <a className="text-body" href="https://github.com/Adarsh4959">Adarsh4959</a>
+        <a className="text-body" href="https://github.com/Adarsh4959" style={{ color: '#ffffff', textDecoration: 'none' }}>
+          Adarsh4959
+        </a>
       </div>
     </footer>
   );
