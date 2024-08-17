@@ -26,7 +26,7 @@ function App() {
             }
           />
           {/* Contact page route */}
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>
